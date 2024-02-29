@@ -40,7 +40,7 @@ const addresses = [
   },
   {
     name: "anil Chaturvedi",
-    phone: 2342342344,
+    phone: 2342342144,
     street: "street 6",
     area: "maruti nagar",
     city: "satna",
@@ -244,7 +244,7 @@ const Checkout = () => {
                       <div className="flex min-w-0 gap-x-4">
                         <input
                           id="address"
-                          name="payment-option"
+                          name="address"
                           type="radio"
                           className="h-4 w-4 mt-1 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                         />

@@ -1,5 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./app/store";
 
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
@@ -37,9 +39,11 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div className="app">
-      <RouterProvider router={router} />
-    </div>
+    <Provider store={store}>
+      <div className="app">
+        <RouterProvider router={router} />
+      </div>
+    </Provider>
   );
 };
 
